@@ -1,0 +1,15 @@
+{
+  "name": "docker-bulvar-css",
+  "version": "1.0.0",
+  "main": "main.scss",
+  "scripts": {
+    "css-build": "sass --no-source-map --style=compressed --charset main.scss:assets/css/buefy.min.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@bulvar/buefy": "^0.11.13",
+    "sass": "^1.58.3"
+  }
+}
